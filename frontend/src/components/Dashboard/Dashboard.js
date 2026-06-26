@@ -19,11 +19,13 @@ function Dashboard({
   // Fetch videos on first load and whenever refreshVideos changes
   useEffect(() => {
     fetchVideos();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [refreshVideos]);
 
   // Apply filters whenever data or filters change
   useEffect(() => {
     applyFilters();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [videos, searchText, selectedGenres, selectedAge, sortBy]);
 
   const fetchVideos = async () => {
