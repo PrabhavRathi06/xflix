@@ -1,0 +1,259 @@
+/* ---------- HEADER ---------- */
+
+.header {
+    background: #202020;
+    height: 72px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    padding: 0 28px;
+  }
+  
+  .logo {
+    height: 42px;
+  }
+  
+  .header__search {
+    width: 710px;
+    display: flex;
+  }
+  
+  .header__search input {
+    flex: 1;
+  
+    height: 42px;
+  
+    background: #121212;
+    color: white;
+  
+    border: 1px solid #444;
+    border-right: none;
+  
+    outline: none;
+  
+    padding: 0 16px;
+  
+    font-size: 15px;
+  }
+  
+  .header__search input::placeholder {
+    color: #777;
+  }
+  
+  .header__search button {
+    width: 52px;
+    height: 42px;
+  
+    background: #2c2c2c;
+  
+    border: 1px solid #444;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    cursor: pointer;
+  }
+  
+  .header__search button img {
+    width: 18px;
+  }
+  
+  .uploadBtn {
+    background: #4d9cff;
+  
+    color: white;
+  
+    border: none;
+  
+    border-radius: 4px;
+  
+    height: 42px;
+  
+    padding: 0 20px;
+  
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  
+    font-size: 14px;
+    font-weight: 500;
+  
+    cursor: pointer;
+  }
+  
+  .uploadBtn img {
+    width: 15px;
+  }
+  
+  /* ---------- FILTER PANEL ---------- */
+  
+  .filterPanel {
+    background: #202020;
+  
+    padding: 18px 0 28px;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    gap: 22px;
+  }
+  
+  .topRow {
+    width: 760px;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .genreButtons {
+    display: flex;
+    gap: 14px;
+  }
+  
+  .ratingButtons {
+    width: 760px;
+  
+    display: flex;
+    gap: 18px;
+  }
+  
+  .pill {
+    background: transparent;
+  
+    border: none;
+  
+    color: #dddddd;
+  
+    font-size: 15px;
+  
+    padding: 10px 18px;
+  
+    border-radius: 999px;
+  
+    cursor: pointer;
+  
+    transition: .2s;
+  }
+  
+  .pill:hover {
+    background: #3b3b3b;
+  }
+  
+  .pill.active {
+    background: white;
+    color: black;
+  }
+
+  .sortWrapper {
+    position: relative;
+  }
+  
+  .sortButton {
+    background: white;
+    border: none;
+    border-radius: 24px;
+    padding: 10px 22px;
+    cursor: pointer;
+  
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  
+    font-size: 15px;
+    font-weight: 500;
+  }
+  
+  .sortMenu {
+    position: absolute;
+    right: 0;
+    top: 55px;
+  
+    width: 170px;
+  
+    background: white;
+  
+    border-radius: 8px;
+  
+    overflow: hidden;
+  
+    box-shadow: 0 8px 20px rgba(0,0,0,.3);
+  
+    z-index: 999;
+  }
+  
+  .sortItem {
+    padding: 12px 18px;
+  
+    cursor: pointer;
+  
+    transition: .2s;
+  }
+  
+  .sortItem:hover {
+    background: #eeeeee;
+  }
+  
+  .sortDropdown {
+    width: 170px;
+  
+    height: 38px;
+  
+    border-radius: 999px;
+  
+    border: none;
+  
+    outline: none;
+  
+    padding: 0 16px;
+  
+    font-size: 14px;
+  
+    cursor: pointer;
+  
+    background: white;
+  }
+  
+  /* ---------- MOBILE ---------- */
+  
+  @media (max-width: 900px) {
+  
+    .header {
+      flex-direction: column;
+      height: auto;
+  
+      padding: 20px;
+  
+      gap: 18px;
+    }
+  
+    .header__search {
+      width: 100%;
+    }
+  
+    .topRow,
+    .ratingButtons {
+      width: 95%;
+      flex-wrap: wrap;
+    }
+  
+    .topRow {
+      justify-content: center;
+      gap: 18px;
+    }
+  
+    .genreButtons {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .ratingButtons {
+      justify-content: center;
+    }
+    
+  
+  }

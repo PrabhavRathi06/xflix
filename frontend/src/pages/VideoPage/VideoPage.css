@@ -1,0 +1,98 @@
+.videoPage {
+  background: #181818;
+  color: white;
+  min-height: 100vh;
+  padding: 25px 0 40px;
+}
+
+.videoPlayer {
+  width: 82%;
+  height: 620px;
+  display: block;
+  margin: auto;
+  border: none;
+  border-radius: 10px;
+}
+
+.videoContent {
+  width: 82%;
+  margin: 30px auto 0;
+}
+
+.titleRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.titleRow h1 {
+  margin: 0;
+  font-size: 52px;
+  font-weight: 700;
+}
+
+.videoInfo {
+  margin-top: 15px;
+  color: #b3b3b3;
+  font-size: 24px;
+}
+
+.voteButtons {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.voteButtons button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 10px 22px;
+
+  border: none;
+  border-radius: 999px;
+
+  cursor: pointer;
+
+  font-size: 18px;
+  font-weight: 600;
+
+  color: white;
+
+  transition: 0.2s ease;
+}
+
+.likeButton {
+  background: #3ea6ff;
+}
+
+.dislikeButton {
+  background: #333333;
+}
+
+.voteButtons button:hover {
+  opacity: .9;
+}
+
+.voteButtons img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+.voteButtons span {
+  color: white;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #444;
+  margin: 35px 0;
+}
+
+.relatedVideos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+}
